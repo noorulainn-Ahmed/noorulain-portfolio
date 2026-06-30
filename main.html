@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noorulain Ahmed -CS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="mainstyle.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  
+  <header class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">Noorulain<span class="nav__logo-dot">.</span></a>
+      <nav class="nav__links" role="navigation" aria-label="Main navigation">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="#about" class="nav__mobile-link">About</a>
+      <a href="#projects" class="nav__mobile-link">Projects</a>
+      <a href="#skills" class="nav__mobile-link">Skills</a>
+      <a href="#contact" class="nav__mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+   
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">Computer Science Student</p>
+          <h1 class="hero__headline reveal">
+            I build things<br />
+            for the <span class="hero__headline--accent">web</span>.
+          </h1>
+          <p class="hero__sub reveal">
+            CS student at CUST, focused on full-stack development
+            and scalable backend systems. Currently seeking internships and
+            collaborative projects where craft still matters.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">See My Work</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__code-card">
+            <div class="hero__code-card-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <pre class="hero__code"><code><span class="c-keyword">const</span> <span class="c-var">noorulain</span> = {
+  <span class="c-prop">role</span>:     <span class="c-str">"Frontend- Dev"</span>,
+  <span class="c-prop">stack</span>:    [<span class="c-str">"JavaScript"</span>, <span class="c-str">"PHP"</span>, <span class="c-str">"SQL"</span> , <span class="c-str">"Bootstrap/CSS"</span>],
+  <span class="c-prop">learning</span>: <span class="c-str">"Web Development"</span>,
+  <span class="c-prop">chai</span>:   <span class="c-keyword">true</span>,
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+ 
+    <section class="about section" id="about">
+      <div class="section__container">
+        <div class="section__label reveal">01 — About</div>
+        <div class="about__grid">
+          <div class="about__text">
+            <h2 class="section__heading reveal">
+              A developer who thinks<br />in systems.
+            </h2>
+            <p class="about__para reveal">
+             I'm Noorulain — a CS student at CUST Islamabad with a genuine interest in how things work under the hood. My time is spent less in classrooms and more in terminals: building side projects, contributing to open-source, and figuring out why things break at 2 a.m.
+            </p>
+            <p class="about__para reveal">
+             I care about writing code that teammates can read, building interfaces that feel intuitive, and products that don't get in users' way. When I'm not coding, I'm exploring new tools, helping classmates debug their assignments, or simply trying to simplify complex problems.
+            </p>
+            <div class="about__meta reveal">
+              <div class="about__meta-item">
+                <span class="about__meta-num">7+</span>
+                <span class="about__meta-label">Projects built</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-num">3</span>
+                <span class="about__meta-label">Open-source PRs merged</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-num">2029</span>
+                <span class="about__meta-label">Graduation year</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__image-col reveal">
+            <div class="about__image-wrapper">
+              <div class="about__image-placeholder" aria-hidden="true">
+                <span>Noorulain</span>
+              </div>
+              <div class="about__image-border"></div>
+            </div>
+            <ul class="about__quick-facts">
+              <li><span>📍</span> Islamabad, Pakistan</li>
+              <li><span>🎓</span> B.S. Computer Science</li>
+              <li><span>🔭</span> Open to internships</li>
+              <li><span>🌐</span> English &amp; Urdu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="projects section section--dark" id="projects">
+      <div class="section__container">
+        <div class="section__label reveal">02 — Projects</div>
+        <h2 class="section__heading reveal">Things I've shipped.</h2>
+        <p class="projects__sub reveal">
+          A selection of projects that kept me up past midnight — in a good way.
+        </p>
+
+        <div class="projects__grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <div class="project-card__icon"></div>
+              <div class="project-card__links">
+                <a href="https://github.com/noorulainn-Ahmed/Zephyr-Co." target="_blank" rel="noopener noreferrer" class="project-card__link"
+                  aria-label="GitHub repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="#" class="project-card__link" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Zephyr &Co.</h3>
+            <p class="project-card__desc">
+            A custom e-commerce platform for Zephyr Jewelry featuring a responsive catalog, intuitive inventory management, and a streamlined checkout flow for a seamless user experience.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <div class="project-card__icon"></div>
+              <div class="project-card__links">
+                <a href="https://github.com/noorulainn-Ahmed/xChangeHour-" target="_blank" rel="noopener noreferrer" class="project-card__link"
+                  aria-label="GitHub repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="#" class="project-card__link" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">xChangeHour</h3>
+            <p class="project-card__desc">
+              Built a collaborative skill-sharing platform using PHP and MySQL that allows students to trade hours of expertise. Implemented a custom relational database to manage user interactions, subject-based skill tracking, and balance logs
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <div class="project-card__icon">🤖</div>
+              <div class="project-card__links">
+                <a href="https://github.com/noorulainn-Ahmed/Apex_express" target="_blank" rel="noopener noreferrer" class="project-card__link"
+                  aria-label="GitHub repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="#" class="project-card__link" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Apex Express</h3>
+            <p class="project-card__desc">
+              A logistics and courier management system built with PHP and MySQL to streamline shipment tracking. Features an admin dashboard for efficient order management and real-time delivery status updates.
+            </p>
+            <div class="project-card__tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <div class="project-card__icon">🌐</div>
+              <div class="project-card__links">
+                <a href="https://github.com/noorulainn-Ahmed/portfolio-idea" target="_blank" rel="noopener noreferrer" class="project-card__link"
+                  aria-label="GitHub repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </a>
+                <a href="#" class="project-card__link" aria-label="Live demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Portfolio Idea</h3>
+            <p class="project-card__desc">
+             A modern, responsive portfolio layout featuring a minimalist aesthetic with custom scrolling animations and section-based navigation. Built using CSS for clean typography and structured using HTML5 to highlight professional skills and experience
+            </p>
+            <div class="project-card__tags">
+             <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="skills section" id="skills">
+      <div class="section__container">
+        <div class="section__label reveal">03 — Skills</div>
+        <h2 class="section__heading reveal">What I work with.</h2>
+
+        <div class="skills__grid">
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Frontend</h3>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span class="skills__name">HTML</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="90"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <span class="skills__name">Bootstrap/CSS</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="88"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <span class="skills__name">JavaScript</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="76"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Backend</h3>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span class="skills__name">JavaScript</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="80"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <span class="skills__name">PHP</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="70"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <span class="skills__name">MySQL</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="74"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Tooling &amp; DevOps</h3>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span class="skills__name">Git / GitHub</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="90"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <span class="skills__name">VS Code</span>
+                <div class="skills__bar">
+                  <div class="skills__bar-fill" data-width="97"></div>
+                </div>
+              </li>
+              
+            </ul>
+          </div>
+
+        </div>
+        <div class="skills__chips reveal">
+          <span class="chip">C++</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">GitHub </span>
+          <span class="chip">Responsive Design</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="contact section section--dark" id="contact">
+      <div class="section__container">
+        <div class="section__label reveal">04 — Contact</div>
+        <div class="contact__grid">
+          <div class="contact__left">
+            <h2 class="section__heading reveal">Let's work<br />together.</h2>
+            <p class="contact__para reveal">
+              Whether you have an internship opening, a freelance project,
+              or just want to talk about something you're building — my inbox
+              is always open. I'll get back to you within a day.
+            </p>
+            <ul class="contact__socials reveal">
+              <li><a href="https://github.com/noorulainn-Ahmed" target="_blank" rel="noopener noreferrer"
+                  class="contact__social-link">GitHub/noorulainn-Ahmed ↗</a></li>
+              <li><a href="https://www.linkedin.com/in/noorulain-ahmed-954903404/" target="_blank" rel="noopener noreferrer"
+                  class="contact__social-link">LinkedIn ↗</a></li>
+              <li><a href="mailto:noorulainwork9@gmail.com" class="contact__social-link">noorulainwork9@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="contact__right reveal">
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form__group">
+                <label class="form__label" for="name">Name</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="you@example.com"
+                  required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="message">Message</label>
+                <textarea class="form__input form__input--textarea" id="message" name="message" rows="5"
+                  placeholder="What's on your mind?" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+              <p class="form__status" id="form-status" role="alert" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <span class="footer__copy">© 2026 Noorulain Ahmed. Built with intent.</span>
+      <a href="#hero" class="footer__back-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
